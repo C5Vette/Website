@@ -6,6 +6,11 @@ html, body {
   /* Prevents the 'bounce' effect at the top/bottom of the page */
   overscroll-behavior-y: none; 
 }
+html, body {
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
 * {
     margin: 0;
     padding: 0;
