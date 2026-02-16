@@ -2,15 +2,7 @@
 /* ==========================================================================
    GLOBAL STYLES & RESET
    ========================================================================== */
-html, body {
-  /* Prevents the 'bounce' effect at the top/bottom of the page */
-  overscroll-behavior-y: none; 
-}
-html, body {
-  min-height: 100dvh;
-  margin: 0;
-  padding: 0;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,18 +21,31 @@ body {
     padding: 0;
     position: relative;
 }
-
+body {
+  background-image: url('assets/ancient_city.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
 /* Page-specific backgrounds */
 body.page-goals {
-    background: url('assets/goals_bg.jpg') center/110% no-repeat fixed;
+   background: url('assets/goals_bg.jpg') center/110% no-repeat fixed;
+   background-image: url('assets/goals_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body.page-volunteer {
     background: url('assets/volunteer_bg.jpg') center/110% no-repeat fixed;
+     background-image: url('assets/volunteer_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body.page-student {
     background: url('assets/student_bg.jpg') center/110% no-repeat fixed;
+     background-image: url('assets/student_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Desktop: disable list item animations on volunteer/student pages */
