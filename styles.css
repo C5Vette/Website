@@ -21,14 +21,7 @@ body {
     padding: 0;
     position: relative;
 }
-html, body {
-  /* This stops the "pull-to-refresh" and the "rubber-band" bounce */
-  overscroll-behavior-y: none;
-  
-  /* Ensures the body takes up the full screen height */
-  height: 100%;
-  overflow-x: hidden;
-}
+
 
 /* Page-specific backgrounds */
 body.page-goals {
@@ -379,6 +372,14 @@ body::before {
     .intro-image i {
         animation: none;
     }
+   html, body {
+  /* This stops the "pull-to-refresh" and the "rubber-band" bounce */
+  overscroll-behavior-y: none;
+  
+  /* Ensures the body takes up the full screen height */
+  height: 100%;
+  overflow-x: hidden;
+}
 }
 
 /* Buttons */
