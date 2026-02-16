@@ -21,31 +21,29 @@ body {
     padding: 0;
     position: relative;
 }
-body {
-  background-image: url('assets/ancient_city.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+html, body {
+  /* This stops the "pull-to-refresh" and the "rubber-band" bounce */
+  overscroll-behavior-y: none;
+  
+  /* Ensures the body takes up the full screen height */
+  height: 100%;
+  overflow-x: hidden;
 }
+
 /* Page-specific backgrounds */
 body.page-goals {
    background: url('assets/goals_bg.jpg') center/110% no-repeat fixed;
-   background-image: url('assets/goals_bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+  
 }
 
 body.page-volunteer {
     background: url('assets/volunteer_bg.jpg') center/110% no-repeat fixed;
-     background-image: url('assets/volunteer_bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+   
 }
 
 body.page-student {
     background: url('assets/student_bg.jpg') center/110% no-repeat fixed;
-     background-image: url('assets/student_bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+
 }
 
 /* Desktop: disable list item animations on volunteer/student pages */
