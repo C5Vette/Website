@@ -73,7 +73,7 @@
                 <h2 class="section-title">About Us</h2>
                 <div class="staff-grid">
                     <!-- Staff Card 1: Prateek Roy -->
-                    <div class="staff-card intro-animate">
+                    <div class="staff-card intro-animate" onclick="toggleStaffCard(this)">
                         <div class="staff-image">
                             <div class="staff-placeholder">
                                 <i class="fas fa-user"></i>
@@ -82,12 +82,17 @@
                         <div class="staff-info">
                             <h3>Prateek Roy</h3>
                             <p class="staff-role">President</p>
-                            <p class="staff-description">Hi, I am Prateek Roy, and I have a strong passion for mathematics and problem solving. I am a member of the Minnesota All-State Math Team and had the opportunity to represent Minnesota at the National Science Olympiad, where I applied advanced math skills in competitive settings. I have also been a student in the University of Minnesota Talented Youth Mathematics Program (UMTYMP), where I have studied advanced topics beyond the standard curriculum.</p>
+                            <div class="staff-details">
+                                <p class="staff-description">Hi, I am Prateek Roy, and I have a strong passion for mathematics and problem solving. I am a member of the Minnesota All-State Math Team and had the opportunity to represent Minnesota at the National Science Olympiad, where I applied advanced math skills in competitive settings. I have also been a student in the University of Minnesota Talented Youth Mathematics Program (UMTYMP), where I have studied advanced topics beyond the standard curriculum.</p>
+                            </div>
                         </div>
+                        <button class="staff-toggle" onclick="event.stopPropagation(); toggleStaffCard(this.parentElement)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <!-- Staff Card 2: Jonathan Rubin -->
-                    <div class="staff-card intro-animate">
+                    <div class="staff-card intro-animate" onclick="toggleStaffCard(this)">
                         <div class="staff-image">
                             <div class="staff-placeholder">
                                 <i class="fas fa-user"></i>
@@ -96,12 +101,17 @@
                         <div class="staff-info">
                             <h3>Jonathan Rubin</h3>
                             <p class="staff-role">Volunteer Lead</p>
-                            <p class="staff-description">Hi! I'm Jonathan Rubin and I'm currently a junior at Eagan High School. I've done UMTYMP since 7th grade and am now in my last year in the program! I've taken every AP math class and I'm also a part of Science Olympiad, HOSA, BPA, Math Team, and of course Mu Alpha Theta.</p>
+                            <div class="staff-details">
+                                <p class="staff-description">Hi! I'm Jonathan Rubin and I'm currently a junior at Eagan High School. I've done UMTYMP since 7th grade and am now in my last year in the program! I've taken every AP math class and I'm also a part of Science Olympiad, HOSA, BPA, Math Team, and of course Mu Alpha Theta.</p>
+                            </div>
                         </div>
+                        <button class="staff-toggle" onclick="event.stopPropagation(); toggleStaffCard(this.parentElement)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <!-- Staff Card 3: Avik Shah -->
-                    <div class="staff-card intro-animate">
+                    <div class="staff-card intro-animate" onclick="toggleStaffCard(this)">
                         <div class="staff-image">
                             <div class="staff-placeholder">
                                 <i class="fas fa-user"></i>
@@ -110,12 +120,17 @@
                         <div class="staff-info">
                             <h3>Avik Shah</h3>
                             <p class="staff-role">Out-reach Lead</p>
-                            <p class="staff-description">Hi, My name is Avik Shah and I am currently a freshman at Eagan High School. I have qualified for UMTYMP and did it for 2 years but ultimately quit and now am taking AP Calculus BC. Outside of school I am a part of debate, Science Olympiad, HOSA, and BPA. I also play soccer and tennis!</p>
+                            <div class="staff-details">
+                                <p class="staff-description">Hi, My name is Avik Shah and I am currently a freshman at Eagan High School. I have qualified for UMTYMP and did it for 2 years but ultimately quit and now am taking AP Calculus BC. Outside of school I am a part of debate, Science Olympiad, HOSA, and BPA. I also play soccer and tennis!</p>
+                            </div>
                         </div>
+                        <button class="staff-toggle" onclick="event.stopPropagation(); toggleStaffCard(this.parentElement)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <!-- Staff Card 4: Gabriel Rubin -->
-                    <div class="staff-card intro-animate">
+                    <div class="staff-card intro-animate" onclick="toggleStaffCard(this)">
                         <div class="staff-image">
                             <div class="staff-placeholder">
                                 <i class="fas fa-user"></i>
@@ -124,12 +139,17 @@
                         <div class="staff-info">
                             <h3>Gabriel Rubin</h3>
                             <p class="staff-role">Advanced Mathematics Tutor</p>
-                            <p class="staff-description">Hi, I am Gabriel Rubin, I am an advanced mathematics student who completed AP Calculus BC as a sophomore, earning a perfect score of 5 on the exam. I am currently enrolled to be taking Multivariable Calculus at the University of Minnesota next year and have mastered mathematics through advanced calculus. In addition to my mathematical expertise, I have tutoring experience in history, biology, chemistry, and other subjects, bringing strong analytical skills and deep understanding to each discipline.</p>
+                            <div class="staff-details">
+                                <p class="staff-description">Hi, I am Gabriel Rubin, I am an advanced mathematics student who completed AP Calculus BC as a sophomore, earning a perfect score of 5 on the exam. I am currently enrolled to be taking Multivariable Calculus at the University of Minnesota next year and have mastered mathematics through advanced calculus. In addition to my mathematical expertise, I have tutoring experience in history, biology, chemistry, and other subjects, bringing strong analytical skills and deep understanding to each discipline.</p>
+                            </div>
                         </div>
+                        <button class="staff-toggle" onclick="event.stopPropagation(); toggleStaffCard(this.parentElement)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <!-- Staff Card 5: Aarav Shah -->
-                    <div class="staff-card intro-animate">
+                    <div class="staff-card intro-animate" onclick="toggleStaffCard(this)">
                         <div class="staff-image">
                             <div class="staff-placeholder">
                                 <i class="fas fa-user"></i>
@@ -138,8 +158,13 @@
                         <div class="staff-info">
                             <h3>Aarav Shah</h3>
                             <p class="staff-role">Advanced Mathematics Tutor</p>
-                            <p class="staff-description">My name is Aarav Shah, and I am a current 9th grader at Eagan High School. Math has been something I have done all my life, something I am very passionate about to this day. It all started when I was 5, a little kid starting his first day of KUMON, something I would stick with till 8th grade. KUMON taught me many things, not just about math, it taught me skills I apply to this day, such as responsibility and time management, a key part of life and math. Outside of KUMON, I participated in Saturday Morning Math for 2 years through MATHCEP at the University of Minnesota and UMTYMP, the University of Minnesota's talented youth math program, which I'm in my 3rd year of and currently in calc 1. I also participated in middle school math league for 3 years, and now I currently volunteer my time to help 4th graders prepare for their math masters competition. Overall, math has played a big role in my life, showing me that hard work does really pay off and that anyone can really do math.</p>
+                            <div class="staff-details">
+                                <p class="staff-description">My name is Aarav Shah, and I am a current 9th grader at Eagan High School. Math has been something I have done all my life, something I am very passionate about to this day. It all started when I was 5, a little kid starting his first day of KUMON, something I would stick with till 8th grade. KUMON taught me many things, not just about math, it taught me skills I apply to this day, such as responsibility and time management, a key part of life and math. Outside of KUMON, I participated in Saturday Morning Math for 2 years through MATHCEP at the University of Minnesota and UMTYMP, the University of Minnesota's talented youth math program, which I'm in my 3rd year of and currently in calc 1. I also participated in middle school math league for 3 years, and now I currently volunteer my time to help 4th graders prepare for their math masters competition. Overall, math has played a big role in my life, showing me that hard work does really pay off and that anyone can really do math.</p>
+                            </div>
                         </div>
+                        <button class="staff-toggle" onclick="event.stopPropagation(); toggleStaffCard(this.parentElement)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
                 </div>
             </div>

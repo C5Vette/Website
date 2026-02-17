@@ -2,6 +2,25 @@
    PARALLAX EFFECT FOR ANCIENT CITY BACKGROUND
    ========================================================================== */
 
+// Toggle staff card expansion
+function toggleStaffCard(card) {
+    const details = card.querySelector('.staff-details');
+    const toggle = card.querySelector('.staff-toggle');
+    const icon = toggle.querySelector('i');
+    
+    if (details.classList.contains('show')) {
+        details.classList.remove('show');
+        toggle.classList.remove('expanded');
+        card.classList.remove('expanded');
+        icon.className = 'fas fa-chevron-down';
+    } else {
+        details.classList.add('show');
+        toggle.classList.add('expanded');
+        card.classList.add('expanded');
+        icon.className = 'fas fa-chevron-up';
+    }
+}
+
 // Parallax effect for ancient city background
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
