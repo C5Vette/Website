@@ -544,14 +544,14 @@ body::before {
 
 /* Signup Page Backgrounds */
 .page-student {
-    background-image: url('assets/student-bg.png');
+    background-image: url('assets/student_bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .page-volunteer {
-    background-image: url('assets/volunteer-bg.png');
+    background-image: url('assets/volunteer_bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
