@@ -1,8 +1,4 @@
-/* ==========================================================================
-   PARALLAX EFFECT FOR ANCIENT CITY BACKGROUND
-   ========================================================================== */
-
-// Toggle staff card expansion
+// Toggle staff card expansion - Global function
 function toggleStaffCard(card) {
     try {
         const details = card.querySelector('.staff-details');
@@ -29,6 +25,10 @@ function toggleStaffCard(card) {
         console.error('Error in toggleStaffCard:', error);
     }
 }
+
+/* ==========================================================================
+   PARALLAX EFFECT FOR ANCIENT CITY BACKGROUND
+   ========================================================================== */
 
 // Parallax effect for ancient city background
 document.addEventListener('DOMContentLoaded', () => {
