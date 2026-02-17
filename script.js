@@ -47,7 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseleave', () => {
         body.style.backgroundPosition = 'center';
     });
-
+    //  XXX   XXXX  XXXX   XXX
+    //  X  X  X  X  X  X   X  X
+    //  XXX   X  X  X  X   XXX
+    //  X     X  X  X  X   X
+    //  X     XXXX  XXXX   X
     const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const revealSelectors = [
         'main h1',
