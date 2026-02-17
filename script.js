@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.story-card',
         '.benefit-item',
         '.signup-button-container',
-        '.signup-button-section'
+        '.signup-button-section',
+        '.staff-card'
     ];
 
     const isDesktop = window.innerWidth >= 769;
