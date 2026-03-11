@@ -1862,6 +1862,8 @@ body::before {
 
 .staff-image {
     margin-bottom: 1.5rem;
+    object-fit: cover;
+    width: 100%;
 }
 
 .staff-placeholder {
